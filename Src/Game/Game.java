@@ -3,26 +3,32 @@ package Src.Game;
 import java.util.Scanner;
 
 public class Game {
+
     public static void main(String[] args) {
         // Initialize game objects, player, etc.
-
+        String userInput = " ";
         boolean isGameActive = true;
         while (isGameActive) {
             // Update game state
+
             // Handle user input
             Scanner input = new Scanner(System.in);
-            String userInput = input.nextLine();
+
+            if (input.hasNextLine() == true) {
+                userInput = input.nextLine();
+                
+            }
             switch (userInput) {
-                case "apple":
+                case "1":
                     System.out.println("You selected Option 1");
                     break;
-                case "uhe":
+                case "2":
                     System.out.println("You selected Option 2");
                     break;
-                case "rjueg":
+                case "3":
                     System.out.println("You selected Option 3");
                     break;
-                case "jef":
+                case "4":
                     System.out.println("Exiting menu...");
                     break;
                 default:
