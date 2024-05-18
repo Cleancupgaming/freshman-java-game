@@ -35,6 +35,7 @@ public class Game {
                     System.out.println("Invalid choice.");
                     break;
             }
+            input.close();
 
             // Render the game
             
